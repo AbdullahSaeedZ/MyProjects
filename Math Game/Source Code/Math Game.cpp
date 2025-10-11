@@ -190,9 +190,14 @@ void PrintTheQuestion(sQuizz Quizz, short QuestionNumber)
 
 int ReadQuestionAnswer()
 {
-	int Answer = 0;
-	cin >> Answer;
-	return Answer;
+	double Answer = 0.0;
+	while (!(cin >> Answer))
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Invalid input. Please enter a number: ";
+	}
+	return (int)Answer;
 }
 
 void SetScreenColor(bool Right)
