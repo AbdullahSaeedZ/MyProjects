@@ -1,4 +1,4 @@
-#💻 Desktop Projects
+# 💻 Desktop Projects
 
 This branch contains a collection of **C# Windows Forms desktop applications** created during my learning journey.
 
